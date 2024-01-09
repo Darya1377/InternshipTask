@@ -48,7 +48,7 @@ def main():
         with open('data.json', 'wb') as file:
             file.write(response.content)
     else:
-        print('Не удалось загрузить JSON файл')
+        print('Error can not load JSON file')
 
     draw_plots('data.json')
 
